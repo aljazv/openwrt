@@ -1,0 +1,23 @@
+
+config 'wifi-device' 'wl0'
+	option 'type' 'broadcom'
+	option 'channel' '6'
+	option 'txpower' '6'
+	option 'disabled' '0'
+	option 'hwmode' '11bg'
+
+config 'wifi-iface'
+	option 'device' 'wl0'
+	option 'network' 'lan'
+	option 'mode' 'ap'
+	option 'encryption' 'psk2'
+	option 'key' 'bmo-home'
+	option 'ssid' 'OpenWRT-home'
+
+config 'wifi-iface'
+	option 'device' 'wl0'
+	option 'network' 'lan2'
+	option 'mode' 'ap'
+	option 'encryption' 'none'
+	option 'ssid' 'OpenWRT-guest'
+
