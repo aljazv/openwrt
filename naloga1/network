@@ -26,6 +26,8 @@ config interface loopback
 
 
 #### LAN configuration
+
+# omrezje ni 192.168.2.1/24 ker ga ima moj domaci LAN
 config interface lan
 	option type 	bridge
 	option ifname	"eth0.0"
